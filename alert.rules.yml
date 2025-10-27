@@ -1,0 +1,12 @@
+groups:
+  - name: nginx_down
+    rules:
+      - alert: NginxDown
+        expr: up{job="nginx"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "NGINX service down"
+          description: "NGINX is not running on the target node."
+
