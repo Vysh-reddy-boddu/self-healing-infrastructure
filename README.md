@@ -21,12 +21,12 @@ Prometheus → Alertmanager → Flask Webhook → Recovery Script (e.g., restart
 
 self-healing-infrastructure/
 │
-├── prometheus.yml # Prometheus configuration
-├── alert.rules.yml # Prometheus alert rules
-├── alertmanager.yml # Alertmanager configuration
-├── restart_nginx.yml # Sample self-healing Ansible playbook
-├── webhook.py # Flask webhook server
-└── README.md # Project documentation
+├── prometheus.yml              # Prometheus configuration
+├── alert.rules.yml             # Prometheus alert rules
+├── alertmanager.yml            # Alertmanager configuration
+├── restart_nginx.yml           # Sample self-healing Ansible playbook
+├── webhook.py                  # Flask webhook server
+└── README.md                   # Project documentation
 
 
 ---
