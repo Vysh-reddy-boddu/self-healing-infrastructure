@@ -37,15 +37,15 @@ self-healing-infrastructure/
 ```bash
 ./node_exporter &
 
-### 1️⃣ SRun Prometheus
+### 1️⃣ Run Prometheus
 ```bash
 ./prometheus --config.file=prometheus.yml
 
-### 1️⃣ SRun Alertmanager
+### 1️⃣ Run Alertmanager
 ```bash
 ./alertmanager --config.file=alertmanager.yml
 
-### 1️⃣ SStart the Flask Webhook
+### 1️⃣ Start the Flask Webhook
 ```bash
 python3 webhook.py
 
@@ -55,3 +55,4 @@ Stop Node Exporter:
 sudo pkill node_exporter
 
 Prometheus detects it → Alertmanager sends webhook → Flask executes recovery.
+
